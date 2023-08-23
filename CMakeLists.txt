@@ -1,15 +1,9 @@
 cmake_minimum_required(VERSION 3.7)
 
-project(libcpl)
+project(CPL)
 
 set(CMAKE_CXX_STANDARD 17)
 
-include_directories(${PROJECT_SOURCE_DIR}/src/)
+add_subdirectory(${PROJECT_SOURCE_DIR}/libcpl)
 
-file(GLOB SOURCE ${PROJECT_SOURCE_DIR}/src/*.cc)
-
-add_library(cpl STATIC ${SOURCE})
-
-add_executable(cpl_test test/main.cc)
-
-target_link_libraries(cpl_test cpl)
+add_subdirectory(${PROJECT_SOURCE_DIR}/study)
