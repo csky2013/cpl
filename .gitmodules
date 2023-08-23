@@ -1,0 +1,4 @@
+[submodule "study/libs/boost"]
+	path = study/libs/boost
+	url = https://github.com/boostorg/boost.git
+	branch = 564e2ac
